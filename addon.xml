@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.lku" name="Repositorio Dedy" version="1.0.0" provider-name="[COLORpurple]•LKU•[/COLOR]">
+<addon id="repository.lku" name="Repositorio Dedy" version="1.0.0" provider-name="[COLORpurple]•Dedy•[/COLOR]">
     <extension point="xbmc.addon.repository" name="Repositorio Dedy">
         <dir minversion="18.9.0">
             <info compressed="false">https://latinokodi.live/plugins/addons.xml</info>

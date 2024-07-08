@@ -1,0 +1,30 @@
+{
+    "addon_version": "4.0.08",
+    "files": {
+        "channels": [
+            "cuevana3pro",
+            "dontorrents",
+            "dontorrentsin",
+            "hdfull",
+            "mejortorrentapp",
+            "nuvid",
+            "ppeliculas"
+        ],
+        "modules": [
+            "domains",
+            "helper",
+            "proxysearch",
+            "submnuteam",
+            "tester"
+        ],
+        "platformcode": [
+            "config"
+        ],
+        "root dir": [
+            "dominios",
+            "version"
+        ]
+    },
+    "fix_version": 1,
+    "hash": "3ae3d568f0aa0ce6e5dcefeb998b24fa"
+}

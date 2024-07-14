@@ -1,24 +1,14 @@
 # -*- coding: UTF-8 -*-
 
-import sys, os, xbmc
+import sys, os
+import xbmc, xbmcvfs
 
 if sys.version_info[0] >= 3:
-    import xbmcvfs
-
     translatePath = xbmcvfs.translatePath
 else:
     translatePath = xbmc.translatePath
 
-
-addon_id = 'plugin.video.dedy'
-
-install = False
-
 if __name__ == '__main__':
-    addonfolder = translatePath(os.path.join('special://home/addons', addon_id))
-
-    if not os.path.exists(addonfolder): install = True
-    elif not xbmc.getCondVisibility('System.HasAddon(addon_id)'): install = True
-
-if install: 
-    xbmc.executebuiltin('InstallAddon(%s)' % (addon_id))
+    addonfolder = translatePath(os.path.join('special://home/addons', 'plugin.video.dedy'))
+    if not os.path.exists(addonfolder):
+        xbmc.executebuiltin('InstallAddon(%s)' % ('plugin.video.dedy'))

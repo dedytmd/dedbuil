@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="repository.dedy" name="[COLOR aqua]Dedy[/COLOR] Repo" version="4.0.1" provider-name="Team Dedy">
-    <extension point="xbmc.addon.repository" name="dedy repo">
+
+    <extension point="xbmc.addon.repository" name="balandro repo">
         <dir>
             <info>https://raw.githubusercontent.com/dedytmd/dedbuil/main/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/dedytmd/dedbuil/main/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/dedytmd/dedbuil/main/</datadir>
         </dir>
     </extension>
-     <extension point="xbmc.addon.metadata">
+
+    <extension point="xbmc.addon.metadata">
        <summary>Repositorio de Balandro</summary>
        <assets>
           <icon>icon.png</icon>

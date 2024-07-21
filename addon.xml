@@ -95,7 +95,6 @@
        <platform>all</platform>
        <license>GNU GPL v3</license>
        <source>https://dedytmd.github.io/dedbuil/</source>
-       <forum>https://www.mimediacenter.info/foro/</forum>
     </extension>
 
     <extension point="xbmc.service" library="service.py" start="login|startup" />

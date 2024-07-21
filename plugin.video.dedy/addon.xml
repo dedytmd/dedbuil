@@ -56,7 +56,7 @@
     <disclaimer>[COLOR aqua][B]Los Propietarios y Distribuidores de este Add-On no Proveen ni Distribuyen Ningún Contenido Mostrado por el Add-On, ni Tienen Afiliación alguna con los Proveedores/Webs de contenidos. [COLOR tan]Está Prohibida su distribución, solo ó junto con Contenidos Multimedia Protegidos por los Derechos de Autor. [COLOR chocolate]Si este tipo de contenido está Prohibido en su País, solamente Usted será el Responsable de su uso. [COLOR white]La vulneración de estas prohibiciones Exonerarán de cualquier Culpa a sus Autores, [COLOR red]Siendo el unico Responsable quien lo haya Distribuido ó Utilizado Ilegalmente.[/B][/COLOR]</disclaimer>
     <platform>all</platform>
     <license>GNU GPL v3</license>
-    <source>https://dedytmd.github.io/base/</source>
+    <source>https://dedytmd.github.io/dedbuil/</source>
   </extension>
 
   <extension point="xbmc.service" library="services.py" start="login|startup"/>

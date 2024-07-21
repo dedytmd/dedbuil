@@ -5,26 +5,26 @@
         <setting label="Información General:" type="lsep"/>
 
         <setting id="info_grl" type="bool" label="Opciones" default="false"/>
-        <setting id="show_help_miscelanea" type="action" label="[COLOR moccasin][B]Miscelanéa[/B][/COLOR]" visible="eq(-1,true)" action="RunPlugin(plugin://plugin.video.balandro/?channel=helper&action=show_help_miscelanea)"/>
-        <setting id="show_plataforma" type="action" label="[COLOR pink][B]Plataforma[/B][/COLOR]" visible="eq(-2,true)" action="RunPlugin(plugin://plugin.video.balandro/?channel=helper&action=show_plataforma)"/>
-        <setting id="manto_internet" type="action" label="[COLOR yellow][B]Internet[/B][/COLOR]" visible="eq(-3,true)" action="RunPlugin(plugin://plugin.video.balandro/?channel=actions&action=test_internet)"/>
-        <setting id="show_help_clean" type="action" label="[COLOR olivedrab][B]Limpiezas[/B][/COLOR]" visible="eq(-4,true)" action="RunPlugin(plugin://plugin.video.balandro/?channel=helper&action=show_help_clean)"/>
-        <setting id="show_help_addons" type="action" label="[COLOR yellowgreen][B]Add-Ons Externos[/B][/COLOR]" visible="eq(-5,true)" action="RunPlugin(plugin://plugin.video.balandro/?channel=submnuteam&action=show_help_addons)"/>
+        <setting id="show_help_miscelanea" type="action" label="[COLOR moccasin][B]Miscelanéa[/B][/COLOR]" visible="eq(-1,true)" action="RunPlugin(plugin://plugin.video.dedy/?channel=helper&action=show_help_miscelanea)"/>
+        <setting id="show_plataforma" type="action" label="[COLOR pink][B]Plataforma[/B][/COLOR]" visible="eq(-2,true)" action="RunPlugin(plugin://plugin.video.dedy/?channel=helper&action=show_plataforma)"/>
+        <setting id="manto_internet" type="action" label="[COLOR yellow][B]Internet[/B][/COLOR]" visible="eq(-3,true)" action="RunPlugin(plugin://plugin.video.dedy/?channel=actions&action=test_internet)"/>
+        <setting id="show_help_clean" type="action" label="[COLOR olivedrab][B]Limpiezas[/B][/COLOR]" visible="eq(-4,true)" action="RunPlugin(plugin://plugin.video.dedy/?channel=helper&action=show_help_clean)"/>
+        <setting id="show_help_addons" type="action" label="[COLOR yellowgreen][B]Add-Ons Externos[/B][/COLOR]" visible="eq(-5,true)" action="RunPlugin(plugin://plugin.video.dedy/?channel=submnuteam&action=show_help_addons)"/>
 
         <setting label="Balandro:" type="lsep"/>
 
         <setting id="info_bro" type="bool" label="Opciones" default="false"/>
-        <setting id="_fuen" type="text" label="[B]Fuente [I]https://repobal.github.io/base/[/I]  Repo, Add-On, Scripts, etc.[/B]" enable="false" visible="eq(-1,true)"/>
-        <setting id="show_help_use" type="action" label="[COLOR darkorange][B]Uso[/B][/COLOR]" visible="eq(-2,true)" action="RunPlugin(plugin://plugin.video.balandro/?channel=helper&action=show_help_use)"/>
-        <setting id="show_help_faq" type="action" label="[COLOR gold][B]FAQS[/B][/COLOR]" visible="eq(-3,true)" action="RunPlugin(plugin://plugin.video.balandro/?channel=helper&action=show_help_faq)"/>
-        <setting id="show_not_contemplated" type="action" label="[COLOR red][B]No Contemplado[/B][/COLOR]" visible="eq(-4,true)" action="RunPlugin(plugin://plugin.video.balandro/?channel=helper&action=show_not_contemplated)"/>
-        <setting id="show_latest_domains" type="action" label="[COLOR cyan][B]Últimos Cambios Dominios[/B][/COLOR]" visible="eq(-5,true)" action="RunPlugin(plugin://plugin.video.balandro/?channel=actions&action=show_latest_domains)"/>
-        <setting id="resumen_canales" type="action" label="[COLOR gold][B]Canales[/B][/COLOR]" visible="eq(-6,true)" action="RunPlugin(plugin://plugin.video.balandro/?channel=submnuteam&action=resumen_canales)"/>
-        <setting id="resumen_servidores" type="action" label="[COLOR fuchsia][B]Servidores[/B][/COLOR]" visible="eq(-7,true)" action="RunPlugin(plugin://plugin.video.balandro/?channel=submnuteam&action=resumen_servidores)"/>
-        <setting id="show_version" type="action" label="[COLOR violet][B]Versión[/B][/COLOR]" visible="eq(-8,true)" action="RunPlugin(plugin://plugin.video.balandro/?channel=helper&action=show_version)"/>
-        <setting id="show_last_fix" type="action" label="[COLOR lime][B]Último Fix[/B][/COLOR]" visible="eq(-9,true)" action="RunPlugin(plugin://plugin.video.balandro/?channel=helper&action=show_last_fix)"/>
-        <setting id="show_test" type="action" label="[COLOR yellow][B]Test[/B][/COLOR]" visible="eq(-10,true)" action="RunPlugin(plugin://plugin.video.balandro/?channel=helper&action=show_test)"/>
-        <setting id="show_legalidad" type="action" label="[COLOR goldenrod][B]Legalidad[/B][/COLOR]" visible="eq(-11,true)" action="RunPlugin(plugin://plugin.video.balandro/?channel=helper&action=show_legalidad)"/>
+        <setting id="_fuen" type="text" label="[B]Fuente [I]https://dedytmd.github.io/dedbuil/[/I]  Repo, Add-On, Scripts, etc.[/B]" enable="false" visible="eq(-1,true)"/>
+        <setting id="show_help_use" type="action" label="[COLOR darkorange][B]Uso[/B][/COLOR]" visible="eq(-2,true)" action="RunPlugin(plugin://plugin.video.dedy/?channel=helper&action=show_help_use)"/>
+        <setting id="show_help_faq" type="action" label="[COLOR gold][B]FAQS[/B][/COLOR]" visible="eq(-3,true)" action="RunPlugin(plugin://plugin.video.dedy/?channel=helper&action=show_help_faq)"/>
+        <setting id="show_not_contemplated" type="action" label="[COLOR red][B]No Contemplado[/B][/COLOR]" visible="eq(-4,true)" action="RunPlugin(plugin://plugin.video.dedy/?channel=helper&action=show_not_contemplated)"/>
+        <setting id="show_latest_domains" type="action" label="[COLOR cyan][B]Últimos Cambios Dominios[/B][/COLOR]" visible="eq(-5,true)" action="RunPlugin(plugin://plugin.video.dedy/?channel=actions&action=show_latest_domains)"/>
+        <setting id="resumen_canales" type="action" label="[COLOR gold][B]Canales[/B][/COLOR]" visible="eq(-6,true)" action="RunPlugin(plugin://plugin.video.dedy/?channel=submnuteam&action=resumen_canales)"/>
+        <setting id="resumen_servidores" type="action" label="[COLOR fuchsia][B]Servidores[/B][/COLOR]" visible="eq(-7,true)" action="RunPlugin(plugin://plugin.video.dedy/?channel=submnuteam&action=resumen_servidores)"/>
+        <setting id="show_version" type="action" label="[COLOR violet][B]Versión[/B][/COLOR]" visible="eq(-8,true)" action="RunPlugin(plugin://plugin.video.dedy/?channel=helper&action=show_version)"/>
+        <setting id="show_last_fix" type="action" label="[COLOR lime][B]Último Fix[/B][/COLOR]" visible="eq(-9,true)" action="RunPlugin(plugin://plugin.video.dedy/?channel=helper&action=show_last_fix)"/>
+        <setting id="show_test" type="action" label="[COLOR yellow][B]Test[/B][/COLOR]" visible="eq(-10,true)" action="RunPlugin(plugin://plugin.video.dedy/?channel=helper&action=show_test)"/>
+        <setting id="show_legalidad" type="action" label="[COLOR goldenrod][B]Legalidad[/B][/COLOR]" visible="eq(-11,true)" action="RunPlugin(plugin://plugin.video.dedy/?channel=helper&action=show_legalidad)"/>
 
         <setting label="Contacto:" type="lsep"/>
 
@@ -52,7 +52,7 @@
         <setting label="Notificaciones en los Canales:" type="lsep"/>
 
         <setting id="inf_channels_opc" type="bool" label="Opciones" default="false"/>
-        <setting id="show_help_resto" type="action" label="Aviso [COLOR red][B]CloudFlare[/COLOR][COLOR orangered] Protection[/B][/COLOR]" visible="eq(-1,true)" action="RunPlugin(plugin://plugin.video.balandro/?channel=helper&action=show_help_resto)"/>
+        <setting id="show_help_resto" type="action" label="Aviso [COLOR red][B]CloudFlare[/COLOR][COLOR orangered] Protection[/B][/COLOR]" visible="eq(-1,true)" action="RunPlugin(plugin://plugin.video.dedy/?channel=helper&action=show_help_resto)"/>
         <setting id="channels_re_charges" type="bool" label="Notificar los [COLOR slateblue][B]Re-Intentos[/B][/COLOR] de acceso en los Canales" default="true" visible="eq(-2,true)"/>
         <setting id="channels_charges_movies" type="bool" label="Presentar Sin Notificar Todas las [COLOR deepskyblue][B]Películas[/B][/COLOR] en las listas especiales" default="true" visible="eq(-3,true)"/>
         <setting id="channels_seasons" type="bool" label="Notificar cuando [COLOR tan][B]No existan Temporadas ó tan solo haya Una[/B][/COLOR]" default="true" visible="eq(-4,true)"/>

@@ -1,0 +1,18 @@
+{
+  "id": "repelisre",
+  "name": "RePelisRe",
+  "thumbnail": "repelisre.jpg",
+
+  "active": true,
+
+  "searchable": true,
+  "search_types": ["movie"],
+
+  "categories": ["movie", "torrent"],
+  "language": ["cast", "lat", "vose"],
+
+  "clusters": ["suggested", "torrents", "news", "rankings", "languages", "kids", "docs", "vos"],
+
+  "notes": "Canal con enlaces Streaming y Torrent. Películas por géneros y año. Puede requerir el uso de proxies en función del país/operadora desde el que se accede."
+
+}

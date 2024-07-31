@@ -6,19 +6,19 @@ from platformcode import config, logger, platformtools
 from core import httptools, jsontools, filetools, downloadtools, scrapertools
 
 
-ant_repos = ['4.0', '3.0.0', '2.0.0', '1.0.5', '1.0.3'] 
+ant_repos = ['4.0'] 
 
 ver_repo_balandro = 'repository.dedy-4.1.zip'
 
 REPO_ID = 'repository.dedy'
 
-REPO_BALANDRO = 'https://raw.githubusercontent.com/repobal/base/main/' + ver_repo_balandro
+REPO_BALANDRO = 'https://raw.githubusercontent.com/dedytmd/dedbuil/main/' + ver_repo_balandro
 
 
 ADDON_UPDATES_JSON = 'https://raw.githubusercontent.com/dedytmd/fix/main/updates.json'
 ADDON_UPDATES_ZIP  = 'https://raw.githubusercontent.com/dedytmd/fix/main/updates.zip'
 
-ADDON_VERSION = 'https://raw.githubusercontent.com/dedytmd/debuil/main/addons.xml'
+ADDON_VERSION = 'https://raw.githubusercontent.com/dedytmd/dedbuil/main/addons.xml'
 
 
 addon_update_verbose = config.get_setting('addon_update_verbose', default=False)

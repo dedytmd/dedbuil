@@ -6,19 +6,19 @@ from platformcode import config, logger, platformtools
 from core import httptools, jsontools, filetools, downloadtools, scrapertools
 
 
-ant_repos = ['4.0'] 
+ant_repos = ['4.0.0', '3.0.0', '2.0.0', '1.0.5', '1.0.3'] 
 
-ver_repo_balandro = 'repository.dedy-4.1.zip'
+ver_repo_balandro = 'repository.balandro-4.0.1.zip'
 
-REPO_ID = 'repository.dedy'
+REPO_ID = 'repository.balandro'
 
-REPO_BALANDRO = 'https://raw.githubusercontent.com/dedytmd/dedbuil/main/' + ver_repo_balandro
+REPO_BALANDRO = 'https://raw.githubusercontent.com/repobal/base/main/' + ver_repo_balandro
 
 
-ADDON_UPDATES_JSON = 'https://raw.githubusercontent.com/dedytmd/fix/main/updates.json'
-ADDON_UPDATES_ZIP  = 'https://raw.githubusercontent.com/dedytmd/fix/main/updates.zip'
+ADDON_UPDATES_JSON = 'https://raw.githubusercontent.com/repobal/fix/main/updates.json'
+ADDON_UPDATES_ZIP  = 'https://raw.githubusercontent.com/repobal/fix/main/updates.zip'
 
-ADDON_VERSION = 'https://raw.githubusercontent.com/dedytmd/dedbuil/main/addons.xml'
+ADDON_VERSION = 'https://raw.githubusercontent.com/repobal/base/main/addons.xml'
 
 
 addon_update_verbose = config.get_setting('addon_update_verbose', default=False)
@@ -38,7 +38,7 @@ def check_repo(force=False):
 
     addons_path = os.path.join(filetools.translatePath("special://home/addons"))
     packages_path = os.path.join(filetools.translatePath("special://home/addons/packages"))
-    path_repo = os.path.join(filetools.translatePath("special://home/addons/repository.dedy"))
+    path_repo = os.path.join(filetools.translatePath("special://home/addons/repository.balandro"))
 
     instalar_repo = False
     re_install_repo = False
@@ -51,8 +51,8 @@ def check_repo(force=False):
 
             for ant in ant_repos:
                 if ant == repo_version:
-                    logger.info('Dedy Repo obsoleto')
-                    platformtools.dialog_notification(config.__addon_name, '[B][COLOR %s]Dedy Repo Obsoleto[/COLOR][/B]' % color_alert)
+                    logger.info('Balandro Repo obsoleto')
+                    platformtools.dialog_notification(config.__addon_name, '[B][COLOR %s]Balandro Repo Obsoleto[/COLOR][/B]' % color_alert)
                     instalar_repo = True
         except:
             re_install_repo = True
@@ -67,7 +67,7 @@ def check_repo(force=False):
         down_stats = downloadtools.do_download(REPO_BALANDRO, packages_path, ver_repo_balandro, silent=True, resume=False)
 
         if down_stats['downloadStatus'] != 2:
-            logger.error('No se pudo descargar Dedy Repo')
+            logger.error('No se pudo descargar Balandro Repo')
             return
 
         try:
@@ -80,23 +80,23 @@ def check_repo(force=False):
 
         time.sleep(2)
         logger.info('Instalando Balandro Repo')
-        platformtools.dialog_notification(config.__addon_name, '[B][COLOR %s]Instalando Dedy Repo[/COLOR][/B]' % color_infor)
+        platformtools.dialog_notification(config.__addon_name, '[B][COLOR %s]Instalando Balandro Repo[/COLOR][/B]' % color_infor)
 
         try:
             xbmc.executebuiltin('UpdateLocalAddons')
             time.sleep(2)
 
-            xbmc.executeJSONRPC('{"jsonrpc": "3.0", "id": 1, "method": "Addons.SetAddonEnabled", "params": {"addonid": "repository.dedy", "enabled": true}}')
+            xbmc.executeJSONRPC('{"jsonrpc": "3.0", "id": 1, "method": "Addons.SetAddonEnabled", "params": {"addonid": "repository.balandro", "enabled": true}}')
 
             xbmc.executebuiltin('UpdateAddonRepos')
             time.sleep(2)
 
             logger.info('Balandro Repo activado')
-            platformtools.dialog_notification(config.__addon_name, '[B][COLOR %s]Dedy Repo activado[/COLOR][/B]' % color_avis)
+            platformtools.dialog_notification(config.__addon_name, '[B][COLOR %s]Balandro Repo activado[/COLOR][/B]' % color_avis)
 
             if instalar_repo: time.sleep(6)
         except:
-            logger.error('Error activación Dedy Repo')
+            logger.error('Error activación Balandro Repo')
             logger.error(traceback.format_exc())
             return False
 
@@ -110,19 +110,19 @@ def check_repo(force=False):
                         if xbmc.executebuiltin('InstallAddon(%s)' % (REPO_ID)) == 0: return
                         return
                     except RuntimeError:
-                        logger.error('Dedy Repo No instalado')
+                        logger.error('Balandro Repo No instalado')
                         return
 
                 except:
                     pass
 
-        xbmc.executeJSONRPC('{"jsonrpc": "3.0", "id": 1, "method": "Addons.SetAddonEnabled", "params": {"addonid": "repository.dedy", "enabled": true}}')
+        xbmc.executeJSONRPC('{"jsonrpc": "3.0", "id": 1, "method": "Addons.SetAddonEnabled", "params": {"addonid": "repository.balandro", "enabled": true}}')
 
         xbmc.executebuiltin('UpdateAddonRepos')
         time.sleep(2)
 
         logger.info('Balandro Repo Re-activado')
-        platformtools.dialog_notification(config.__addon_name, '[B][COLOR %s]Dedy Repo [COLOR %s]Re-activado[/COLOR][/B]' % (color_adver, color_avis))
+        platformtools.dialog_notification(config.__addon_name, '[B][COLOR %s]Balandro Repo [COLOR %s]Re-activado[/COLOR][/B]' % (color_adver, color_avis))
 
 
 def check_addon_updates(verbose=False, force=False):
